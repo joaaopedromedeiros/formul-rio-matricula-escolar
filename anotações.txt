@@ -24,6 +24,10 @@ Exemplo: Preciso por uma dimensão de 32px em uma fonte, mas utilizo EM! Como fa
 
 } 
 
+eu também poderia usar esse tipo de seletor
+
+* main .main-container {...} *
+
 --> Se liga! OLHA O ESPAÇAMENTO EIN! " = ESPAÇAMENTO
 &".main-container
 
