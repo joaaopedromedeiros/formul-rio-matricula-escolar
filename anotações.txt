@@ -1,0 +1,21 @@
+
+--------------------------------UNIDADE DE FONTES--------------------------
+
+Oq é rem? Bom, é muito bom! Pois, modifica de acordo com as preferências do usuário. Caso você coloque PX sempre vai ficar o tamanho que você definiu, mesmo que o usuário tenha dificuldades de leitura. R = root, EM = unidade de medida
+
+Unidade de medidas & diferenças
+
+rem: Isso vai buscar de acordo com a fonte que vc estabeleceu do site.
+em: Vai buscar aplicar o tamanho estabelecido de fonte do elemento pai. Como assim?
+Enquanto a root é toda a página independente de uma section ou div, o elemento com EM vai primeiro buscar algo estabelcido no elemento que está inserido.
+
+Eu posso estabelecer a root & uma configuração de tamanho de fonte a uma div separadamente.
+
+Então: Jamais aplique uuma root com PX. Como eu aplico então? Assim:
+ValorPX / 16 = ValorEM necessário!
+
+Exemplo: Preciso por uma dimensão de 32px em uma fonte, mas utilizo EM! Como faço isso?
+
+32/16 = Valor Necessário(EM)
+
+--------------------------------OUTROS--------------------------
