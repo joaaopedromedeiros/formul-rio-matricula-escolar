@@ -1,0 +1,31 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%; 
+
+
+  height: 100%;
+  overflow: hidden; /*sempre que transbordar não vai criar rolagem*/
+}
+
+main {
+  overflow: auto;
+  padding: 4rem; /*padding em cima e nas laterais (64px/16) = 4rem*/
+
+& .main-container {
+  max-width: 33rem; /* 528px convertido em rem*/
+  margin-left: auto; /*sempre preenche todo espaço esquerdo*/
+} 
+
+/*Anotação sobre & em nesting*/
+
+}
+
+aside {
+  background-color: var(--surface-secondary);
+  padding: 4rem;
+  margin-right: auto; /*sempre preenche todo espaço direito*/
+
+  & .aside-container {
+    max-width: 31rem; /* 496px convertido em rem*/
+  }
+}

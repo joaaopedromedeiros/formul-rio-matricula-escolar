@@ -18,4 +18,15 @@ Exemplo: Preciso por uma dimensão de 32px em uma fonte, mas utilizo EM! Como fa
 
 32/16 = Valor Necessário(EM)
 
+--------------------------------& no nesting--------------------------
+
+& .main-container {
+
+} 
+
+--> Se liga! OLHA O ESPAÇAMENTO EIN! " = ESPAÇAMENTO
+&".main-container
+
+--> Esse "&" significa está procurando em toda a  div, mesmo que esteja um pouco longe do elemento do CSS que está recebendo o nesting.
+
 --------------------------------OUTROS--------------------------
