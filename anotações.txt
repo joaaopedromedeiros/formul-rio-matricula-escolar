@@ -33,4 +33,15 @@ eu também poderia usar esse tipo de seletor
 
 --> Esse "&" significa está procurando em toda a  div, mesmo que esteja um pouco longe do elemento do CSS que está recebendo o nesting.
 
---------------------------------OUTROS--------------------------
+--------------------------------FORMS--------------------------
+
+<div class="input-wrapper"> 
+  <label for="fullname"> Nome  Completo</label>
+  <input id="fullname" name="tag-celula" type="text">
+</div>
+
+--> Geralmente maik usa assim, uma div com uma classe em volta de cada celula de dados 
+
+For & id - apenas identificadores
+For="someid"
+id ="someid" , eles estão ligados 
