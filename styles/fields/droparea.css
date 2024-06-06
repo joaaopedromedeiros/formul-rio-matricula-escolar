@@ -1,0 +1,46 @@
+/*Fazendo aquela parte visual  que deixa intuitivo como enviar o arquivo*/
+/*Vou modelar toda o estilo da caixa de baixoi só com elementos e depois creio que oculta o estilo padrão e colocar por cima o que foi criado na dropszone */
+
+.dropzone {
+  border: 1px dashed var(--stroke-default);
+  border-radius: 0.25rem;
+
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1.75rem 1rem; /*1.75rem em cima e baixo e 1 nas laterais*/
+
+  /*Ocultando o estilo padrão*/
+
+    position: relative;
+  & input {
+    position: absolute; /*Aonde? dropzone, então add relative acima*/
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0; /*Agora o input ocupa 100% de altura e largura além de está em position*/
+  }
+
+& p {
+  color: #A8A29E;
+  
+}
+
+&:hover, &:has(input:focus) {
+  border-width: 2px;
+  border-color:  var(--stroke-hightlight);
+  background-color: var(--surface-secondary);
+
+  & p {
+    color: var(--text-tertiary);
+  }
+/*Trocando a cor do icon, troque a IMG pelo   SVG! Copy and paste do figma no lugar de toda*/
+  & svg path {
+    stroke: var(--stroke-hightlight);
+  }
+  
+} /*tudo que vem "antes"/"dentro" vai ficar colorido conforme mencionar ao passar o mouse por cima*/
+
+
+}
