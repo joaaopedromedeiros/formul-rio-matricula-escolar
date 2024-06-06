@@ -75,3 +75,19 @@ select {
 }
 
 /* FIM Trocando o calendário SAFARI*/
+
+.address .flex  {
+  gap: 1.25rem;
+}
+
+.INPUT-WRAPPER:HAS([disabled]) {
+  opacity: 0.5;
+}
+
+input {
+  &[disabled] {
+background-color: var(--surface-disabled);
+border: 1px solid var(--stroke-default);
+color: var(--text-primary);
+  }
+}
