@@ -71,7 +71,7 @@ input[type=date] {
 
 select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
-  /*calc é uma maneira de calcular espaçamento, aqui eu posicionei*/
+  /*calc é uma maneira de calcular espaçamento, aqui eu posicionei na esquerda*/
 }
 
 /* FIM Trocando o calendário SAFARI*/
@@ -90,4 +90,31 @@ background-color: var(--surface-disabled);
 border: 1px solid var(--stroke-default);
 color: var(--text-primary);
   }
+
+  &:invalid {
+    border: 0.125rem solid var(--semantic-error);
+  } /*a div invalid pode ser usada pois adicionamos o required*/
+
+  input + small {
+    font: var(--text-sm);
+    color: #78716C;
+
+    display: inline-block; /*small é inline, mas quero por margin então uso isso para ativar as confgs.*/
+    margin-top: 0.25rem;
+  } /*Todo input que tenha small como irmão*/
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    font: var(--text-sm);
+    color: var(--semantic-error);
+
+    margin-top: 0.25rem;
+  } /*se meu input tiver um required e ao lado um .error eu aplico no error ...*/
+
+  &:not(:focus):valid + .error {
+    display: none;
+  } /*Se o input não está em foco e estiver valido e tiver  .error ao lado o .error  some*/
 }
