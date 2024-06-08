@@ -1,0 +1,35 @@
+button {
+  all: unset; /*tirar tudo que tiver de confg dos botões padrões para modificar */
+
+/*Criando os nossos*/
+
+font-weight: 500;
+color: var(--text-highlight);
+padding: 0.75rem 1.5rem;
+border-radius: 1.5rem;
+cursor: pointer;
+
+&.btn-primary {
+  color: white;
+  background-color: #E43A12;
+
+  &:hover,
+  &:focus {
+    background-color: #F3541C;
+  } /*Focus é sempre quando tiver com teclado pelo 6tab*/
+}
+
+&.btn-secondary {
+  margin-left: auto;
+  border: 1px solid var(--text-highlight);
+
+  &:hover,
+  &:focus {
+    color: #E43A12C;
+    outline: 0.25rem solid var(--surface-secondary)
+  } /*Focus é sempre quando tiver com teclado pelo 6tab*/
+}
+
+}
+
+/*Falta conferir os botões, e scroll cade?*/

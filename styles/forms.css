@@ -23,3 +23,9 @@ fieldset + fieldset {
 margin-top: 3rem;
 
 } /*Quando tiver um fieldset anterior ao filedset... aplique*/
+
+.actions-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
