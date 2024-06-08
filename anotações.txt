@@ -45,3 +45,7 @@ eu também poderia usar esse tipo de seletor
 For & id - apenas identificadores
 For="someid"
 id ="someid" , eles estão ligados 
+
+--------------------------------SOBRE SELEÇÃO DE OPÇÕES--------------------------
+
+Basicamente, quando você usa o radios você apenas usa a configuração dele e forma de conseguir identificar e enviar os dados para o back-end... No entanto você deixa o seu input todo sem aperecer, pelo css, e depois cria um elemento como se fosse uma caixa para cada opção de elemento e cria o mecanismo de "slecionar" personalizado.

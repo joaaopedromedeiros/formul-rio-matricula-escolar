@@ -8,6 +8,7 @@ label  + .radio-wrapper {
 
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
    /*auto-fit: colunas automaticas, minmax: define o tamanho mínimo e máximo em função da imagem e 1fr a divisão do espaço, deixando responsivo até em tela menores que no mpinimo vai ficar com 128px/16 = 7.75rem*/
+   gap: 0.5rem;
 }
 
 
@@ -34,7 +35,7 @@ position: relative;
 }
 
 .radio-image {
-  background-image: url(../../assets/icons/radio-default.svg);
+  background-image: url(../../assets/icons/radio-default.svg); /* adicionando na div de seleção personalizada*/
   width: 1.5rem;
   height: 1.5rem;
 
@@ -49,7 +50,7 @@ position: relative;
   & .radio-image {
     background-image: url(../../assets/icons/radio-hover.svg);
   }
-} /*Referente ao radio-image, se estiver por cima e focado em algo interno*/
+} /*Referente ao radio-image que é a div para add a seleção, se estiver por cima e focado em algo interno*/
 
 &:has(:checked) {
   border: 2px solid var(--stroke-hightlight);

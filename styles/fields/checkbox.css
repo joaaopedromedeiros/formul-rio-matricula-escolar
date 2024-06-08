@@ -1,0 +1,53 @@
+.terms-wrapper {
+  margin-top: 3rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  align-items: flex-start; /*Isso deixa tudo no inicio verticalemnte (align) e vai dx a imagem que vamos por no futuro para simbolizar o check. */
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: var(--text-highlight);
+  font-weight: bold;
+}
+
+/*Esquema de personalizar o botão de selecionar os termos */
+
+.checkbox-wrapper {
+  position: relative;
+
+  /*Dessa div-pai eu quero o input que tem o tipo checkbox. esse "[]" significa algo relacionado a algo que tenha atributo*/
+
+  & [type="checkbox"] {
+
+all: unset;
+position:  absolute;
+inset: 0;
+
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;  /*Confg para resolver o stretch que estava tudo esticadasso*/
+
+    background-image: url(../../assets/icons/checkbox-default.svg);
+  }
+
+  &:hover, &:focus-within {
+    .checkbox-image {
+      background-image: url(../../assets/icons/checkbox-hover.svg);
+    }
+  } /*focus within é o objeto escondido*/
+
+  &:has(:checked) .checkbox-image {
+   background-image: url(../../assets/icons/checkbox-checked.svg);
+  }
+
+}
+
+/*Fim do esquema, lol*/

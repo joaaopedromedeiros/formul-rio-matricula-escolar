@@ -143,6 +143,7 @@
 
 <fieldset class="enroll-options">
 <legend>opções de matrícula</legend>
+
 <div class="input-wrapper">
   <label>Selecione o turno de estudo</label>
 
@@ -170,10 +171,71 @@
 
   </div>
 </div> 
-</fieldset>
+
+<div class="input-wrapper">
+  <label>Em qual esporter você gostaria de escrever seu filho?</label>
+
+  <div class="radio-wrapper">
+
+    <div class="radio-inner"> 
+      <div class="radio-image"></div> <!-- usar position + bg-img no CSS (mecanismo-seleção)-->
+      <input type="radio" name="sport" id="football"> <!-- Oculta, qualquer espaço da caixa de um  radio-inner seleciona-->
+      <img src="assets/icons/football.svg" alt="icone de futebol"> <!-- Icone-->
+      <label for="football">Futebol</label> <!-- nome do sport -->
+    </div>
+    
+    <div class="radio-inner"> 
+      <div class="radio-image"></div> <!-- usar position + bg-img no CSS (mecanismo-seleção)-->
+      <input type="radio" name="sport" id="basketball"> <!-- Oculta, qualquer espaço da caixa de um  radio-inner seleciona-->
+      <img src="assets/icons/basketball-02.svg" alt="icone de basquete"> <!-- Icone-->
+      <label for="basketball">Basquete</label> <!-- nome do sport -->
+    </div>
+
+    <div class="radio-inner"> 
+      <div class="radio-image"></div> <!-- usar position + bg-img no CSS (mecanismo-seleção)-->
+      <input type="radio" name="sport" id="swimming"> <!-- Oculta, qualquer espaço da caixa de um  radio-inner seleciona-->
+      <img src="assets/icons/swimming.svg" alt="icone de futebol"> <!-- Icone-->
+      <label for="swimming">Natação</label> <!-- nome do sport -->
+    </div>
+
+    <div class="radio-inner"> 
+      <div class="radio-image"></div> <!-- usar position + bg-img no CSS (mecanismo-seleção)-->
+      <input type="radio" name="sport" id="Yoga"> <!-- Oculta, qualquer espaço da caixa de um  radio-inner seleciona-->
+      <img src="assets/icons/yoga-02.svg" alt="icone de Yoga"> <!-- Icone-->
+      <label for="Yoga">Yoga</label> <!-- nome do sport -->
+    </div>
+
+    <div class="radio-inner"> 
+      <div class="radio-image"></div> <!-- usar position + bg-img no CSS (mecanismo-seleção)-->
+      <input type="radio" name="sport" id="volleyball"> <!-- Oculta, qualquer espaço da caixa de um  radio-inner seleciona-->
+      <img src="assets/icons/volleyball.svg" alt="icone de volley"> <!-- Icone-->
+      <label for="volleyball">Volley</label> <!-- nome do sport -->
+    </div>
+
+    <div class="radio-inner"> 
+      <div class="radio-image"></div> <!-- usar position + bg-img no CSS (mecanismo-seleção)-->
+      <input type="radio" name="sport" id="box"> <!-- Oculta, qualquer espaço da caixa de um  radio-inner seleciona-->
+      <img src="assets/icons/boxing-glove-01.svg" alt="icone de box"> <!-- Icone-->
+      <label for="box">Box</label> <!-- nome do sport -->
+    </div>
+
+  </div>
+</div>
 
 
+</fieldset> 
 
+<!-- Não usa fieldset pois não é uma nova categoria de informações, não tem tanta coisa em volta, etc.-->
+
+<!-- declaração de ciência -->
+<div class="terms-wrapper input-wrapper checkbox-wrapper"> 
+
+  <div class="checkbox-image"> </div>
+  <input type="checkbox" name="terms" id="terms">
+  <label for="terms"> Declaro que li e concordo com os <a href="#">Termos e Condições</a>  e com a <a href="#">Politica de privacidade</a> da escola Estrela do Amanhã.  </label>
+
+  
+</div>
 
  </form>
 <!-- Fim formulário-->
