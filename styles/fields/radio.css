@@ -1,0 +1,67 @@
+label  + .radio-wrapper {
+  margin-top: 1rem;
+}
+
+
+.radio-wrapper {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+   /*auto-fit: colunas automaticas, minmax: define o tamanho mínimo e máximo em função da imagem e 1fr a divisão do espaço, deixando responsivo até em tela menores que no mpinimo vai ficar com 128px/16 = 7.75rem*/
+}
+
+
+
+
+.radio-inner {
+
+border: 1px solid var(--stroke-default);
+border-radius: 0.5rem;
+
+display: grid;
+justify-items: center;
+gap: 0.5rem;
+
+padding: 2rem 0.5rem 0.5rem;
+
+position: relative;
+& input,
+& input:focus,
+& input:hover {
+  all: unset; /*faz todas confgs sumir*/
+  position: absolute; /*vai ficar por cima de tudo, usa relative para ficar por cima apenas dos radkios inner*/
+  inset: 0;
+}
+
+.radio-image {
+  background-image: url(../../assets/icons/radio-default.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+&:hover, &:focus-within {
+  border: 1px solid var(--stroke-hightlight);
+
+  & .radio-image {
+    background-image: url(../../assets/icons/radio-hover.svg);
+  }
+} /*Referente ao radio-image, se estiver por cima e focado em algo interno*/
+
+&:has(:checked) {
+  border: 2px solid var(--stroke-hightlight);
+
+  & .radio-image {
+    background-image: url(../../assets/icons/radio-checked.svg);
+  } 
+}
+
+
+
+
+
+
+} /*Retirando  confgs criadas anteriores para filhos/elementos do radio-inner*/
